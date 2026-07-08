@@ -1,0 +1,14 @@
+/target/
+
+# Local editor and OS metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+
+# Local runtime output
+*.log
+*.tmp
+*.temp

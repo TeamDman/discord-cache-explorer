@@ -1,0 +1,43 @@
+[package]
+name = "discord-cache-explorer"
+version = "0.1.0"
+edition = "2024"
+authors = ["TeamDman"]
+description = "A visual explorer for Discord cache files."
+license = "MPL-2.0"
+repository = "https://github.com/TeamDman/discord-cache-explorer"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+color-eyre = "0.5"
+directories-next = "2"
+eframe = { version = "0.33", features = ["persistence"] }
+egui_extras = { version = "0.33.3", features = ["all_loaders"] }
+egui_tiles = "0.14.1"
+eyre = "0.6"
+facet = "=0.46.5"
+figue = { package = "teamy-figue", version = "=5.1.0" }
+image = { version = "0.25.9", features = ["jpeg", "png", "webp"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[build-dependencies]
+
+[lints.rust]
+ambiguous_negative_literals = "warn"
+missing_debug_implementations = "warn"
+redundant_imports = "warn"
+redundant_lifetimes = "warn"
+trivial_numeric_casts = "warn"
+unsafe_op_in_unsafe_fn = "warn"
+unused_lifetimes = "warn"
+
+[lints.clippy]
+cargo = { level = "warn", priority = -1 }
+complexity = { level = "warn", priority = -1 }
+correctness = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+perf = { level = "warn", priority = -1 }
+style = { level = "warn", priority = -1 }
+suspicious = { level = "warn", priority = -1 }
+multiple_crate_versions = "allow"
